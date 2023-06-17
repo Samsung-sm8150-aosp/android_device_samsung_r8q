@@ -7,10 +7,10 @@
 # Include the common OEM chipset BoardConfig.
 include device/samsung/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/y2q
+DEVICE_PATH := device/samsung/r8q
 
 # Display
 TARGET_SCREEN_DENSITY := 450
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/lineage_y2q_defconfig
+TARGET_KERNEL_CONFIG := vendor/lineage_r8q_defconfig

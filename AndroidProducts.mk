@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_y2q.mk
+    $(LOCAL_DIR)/lineage_r8q.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_y2q-user \
-    lineage_y2q-userdebug \
-    lineage_y2q-eng
+    lineage_r8q-user \
+    lineage_r8q-userdebug \
+    lineage_r8q-eng
