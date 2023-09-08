@@ -22,25 +22,22 @@ DEVICE_PATH := device/samsung/r8q
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 
-
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lineage_r8q_defconfig
-
-# Keystore
-TARGET_KEYMASTER_VARIANT := samsung
 
 # Partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 10292822016
 BOARD_SUPER_PARTITION_SIZE := 10288627712
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 
 # inherit from the proprietary version
 -include vendor/samsung/r8q/BoardConfigVendor.mk
